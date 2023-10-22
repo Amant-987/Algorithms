@@ -23,10 +23,12 @@ public class Program {
 
         String searchResult = hashMap.get("+7900111223307");
 
+        System.out.println("HashMap elements:");
         System.out.println(hashMap);
 
-        for (HashMap.Entity entuty : hashMap) {
-            System.out.printf("%s - %s", entuty.key, entuty.value);
+        System.out.println("\nIterating HashMap elements:");
+        for (HashMap.Entity entry : hashMap) {
+            System.out.println(entry.key + " -> " + entry.value);
         }
     }
 
